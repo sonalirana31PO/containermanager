@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0056B3;
+  --color-primary-foreground: #ffffff;
+  
+  --color-secondary: #f1f5f9;
+  --color-secondary-foreground: #0f172a;
+  
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  
+  --color-accent: #f1f5f9;
+  --color-accent-foreground: #0f172a;
+  
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #0056B3;
+  
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  
+  --color-popover: #ffffff;
+  --color-popover-foreground: #0f172a;
+  
+  --radius: 0.5rem;
+}
+
+:root {
+  --color-primary-500: #0056B3;
+  --color-surface-white: #FFFFFF;
+  --color-surface-subtle: #F4F6F8;
+  --color-text-main: #1A202C;
+  --color-text-muted: #718096;
+  --color-alert-critical: #E53E3E;
+  --color-alert-warning: #DD6B20;
+  --color-success: #38A169;
+  
+  --sidebar-width: 260px;
+  --topbar-height: 64px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--color-surface-subtle);
+  color: var(--color-text-main);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+p, span, div {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* Focus visible styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
